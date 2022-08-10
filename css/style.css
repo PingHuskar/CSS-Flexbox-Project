@@ -50,6 +50,38 @@ body {
           body .outer-wrap .content-area .watch .watch-card .watch-content .movie-info a {
             color: #fff;
             font-weight: bold; }
+    body .outer-wrap .content-area .download .download-card {
+      margin-bottom: 1em; }
+    body .outer-wrap .content-area .download .download-content {
+      background: #fff; }
+      body .outer-wrap .content-area .download .download-content a {
+        background: #000;
+        color: #fff;
+        padding: 1em 2em;
+        text-decoration: none;
+        text-transform: capitalize; }
+        body .outer-wrap .content-area .download .download-content a i {
+          font-size: 2.5em; }
+      body .outer-wrap .content-area .download .download-content .download-info {
+        padding: 1em 2em; }
+        body .outer-wrap .content-area .download .download-content .download-info h4 {
+          margin: 0; }
+        body .outer-wrap .content-area .download .download-content .download-info p {
+          margin: 0;
+          font-size: 0.9em; }
+      body .outer-wrap .content-area .download .download-content .download-cast img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%; }
+      body .outer-wrap .content-area .download .download-content .download-rating {
+        background: #f6d200;
+        padding: 1em 2em;
+        color: #000;
+        font-size: 0.9em; }
+        body .outer-wrap .content-area .download .download-content .download-rating .rate {
+          font-size: 2.5em;
+          font-weight: bold;
+          margin-bottom: -2.5em; }
   body .outer-wrap .site-header {
     height: 400px;
     display: flex;
@@ -96,7 +128,7 @@ img {
     display: flex; }
 
   .sidebar-right {
-    flex: 0 0 320 px; } }
+    flex: 0 0 320px; } }
 @media screen and (min-width: 1120px) {
   .site-title {
     font-size: 4em !important; } }
