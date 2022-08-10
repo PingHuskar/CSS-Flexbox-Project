@@ -210,8 +210,27 @@ body {
             }
         }
         .sidebar-right {
-            background: blue;
-            color: #fff;
+            background: #EDEDED;
+            color: #000;
+            padding: 2em;
+            .widget {
+                background: white;
+                margin-bottom: 2em;
+                .widget-content {
+                    padding: 0.5em 2em;
+                    ul {
+                        list-style-type: none;
+                        padding-left: 1em;
+                        a {
+                            display: block;
+                            padding: 0.4em;
+                            color: black;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -287,4 +306,16 @@ img {
     .download-info {
         flex-grow: 2;
     }
+}
+
+@media screen and (min-width: 810px) and (max-width:1120px) {
+    .sidebar-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .widget {
+            flex-basis: 48.8%;
+        }
+    }
+    
 }

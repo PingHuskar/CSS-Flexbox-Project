@@ -152,8 +152,23 @@ body {
       color: #000;
       background: #f6d200; }
   body .outer-wrap .sidebar-right {
-    background: blue;
-    color: #fff; }
+    background: #EDEDED;
+    color: #000;
+    padding: 2em; }
+    body .outer-wrap .sidebar-right .widget {
+      background: white;
+      margin-bottom: 2em; }
+      body .outer-wrap .sidebar-right .widget .widget-content {
+        padding: 0.5em 2em; }
+        body .outer-wrap .sidebar-right .widget .widget-content ul {
+          list-style-type: none;
+          padding-left: 1em; }
+          body .outer-wrap .sidebar-right .widget .widget-content ul a {
+            display: block;
+            padding: 0.4em;
+            color: black;
+            text-decoration: none;
+            font-weight: bold; }
 
 h1 {
   color: red; }
@@ -213,5 +228,12 @@ img {
 
   .download-info {
     flex-grow: 2; } }
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+  .sidebar-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .sidebar-right .widget {
+      flex-basis: 48.8%; } }
 
 /*# sourceMappingURL=style.css.map */
