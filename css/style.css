@@ -53,22 +53,35 @@ body {
     body .outer-wrap .content-area .download .download-card {
       margin-bottom: 1em; }
     body .outer-wrap .content-area .download .download-content {
-      background: #fff; }
+      background: #fff;
+      display: flex;
+      flex-flow: column; }
       body .outer-wrap .content-area .download .download-content a {
         background: #000;
         color: #fff;
         padding: 1em 2em;
         text-decoration: none;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center; }
         body .outer-wrap .content-area .download .download-content a i {
           font-size: 2.5em; }
       body .outer-wrap .content-area .download .download-content .download-info {
         padding: 1em 2em; }
         body .outer-wrap .content-area .download .download-content .download-info h4 {
-          margin: 0; }
+          margin: 0;
+          flex-basis: 20%; }
         body .outer-wrap .content-area .download .download-content .download-info p {
           margin: 0;
           font-size: 0.9em; }
+      body .outer-wrap .content-area .download .download-content .download-genre {
+        margin-bottom: 10px; }
+      body .outer-wrap .content-area .download .download-content .download-cast, body .outer-wrap .content-area .download .download-content .download-genre {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; }
       body .outer-wrap .content-area .download .download-content .download-cast img {
         height: 60px;
         width: 60px;
@@ -77,11 +90,14 @@ body {
         background: #f6d200;
         padding: 1em 2em;
         color: #000;
-        font-size: 0.9em; }
+        font-size: 0.9em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center; }
         body .outer-wrap .content-area .download .download-content .download-rating .rate {
           font-size: 2.5em;
-          font-weight: bold;
-          margin-bottom: -2.5em; }
+          font-weight: bold; }
   body .outer-wrap .site-header {
     height: 400px;
     display: flex;
@@ -151,7 +167,7 @@ img {
     flex-basis: 100%; } }
 @media screen and (min-width: 810px) {
   .watch-card {
-    display: flex; }
+    display: flex !important; }
 
   .watch-content {
     display: flex;
@@ -160,5 +176,15 @@ img {
 
   .img-right {
     order: 1; } }
+@media screen and (min-width: 810px) {
+  .download-content {
+    display: flex;
+    flex-direction: row !important; }
+
+  .download-content a, .download-rating {
+    flex-grow: 1; }
+
+  .download-info {
+    flex-grow: 2; } }
 
 /*# sourceMappingURL=style.css.map */

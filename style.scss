@@ -77,12 +77,18 @@ body {
                 }
                 .download-content {
                     background: #fff;
+                    display: flex;
+                    flex-flow: column;
                     a {
                         background: #000;
                         color: #fff;
                         padding: 1em 2em;
                         text-decoration: none;
                         text-transform: capitalize;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        text-align: center;
                         span {
 
                         } 
@@ -94,11 +100,20 @@ body {
                         padding: 1em 2em;
                         h4 {
                             margin: 0;
+                            flex-basis: 20%;
                         }
                         p {
                             margin: 0;
                             font-size: 0.9em;
                         }
+                    }
+                    .download-genre {
+                        margin-bottom: 10px;
+                    }
+                    .download-cast,.download-genre {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
                     }
                     .download-cast {
                         img {
@@ -112,10 +127,13 @@ body {
                         padding: 1em 2em;
                         color: #000;
                         font-size: 0.9em;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        text-align: center;
                         .rate {
                             font-size: 2.5em;
                             font-weight: bold;
-                            margin-bottom: -2.5em;
                         }
                     }
                 }
@@ -208,7 +226,7 @@ img {
 }
 @media screen and (min-width: 810px) {
     .watch-card {
-        display: flex;
+        display: flex !important;
     }
     .watch-content {
         display: flex;
@@ -217,5 +235,17 @@ img {
     }
     .img-right {
         order: 1;
+    }
+}
+@media screen and (min-width: 810px) {
+    .download-content {
+        display: flex;
+        flex-direction: row !important;
+    }
+    .download-content a, .download-rating {
+        flex-grow: 1;
+    }
+    .download-info {
+        flex-grow: 2;
     }
 }
