@@ -13,7 +13,25 @@ body {
             height: 100px;
         }
         .content-area {
-
+            padding: 2em;
+            .post {
+                background: #fff;
+                margin-bottom: 1em;
+                a {
+                    color: #000;
+                    text-decoration: none;
+                    .post-content {
+                        padding: 0 40px 20px;
+                        h2 {
+                            background: #f6d200;
+                            color: #000;
+                            padding: 20px;
+                            text-align: center;
+                            margin: 0 -40px 30px;
+                        }
+                    }
+                }
+            }
         }
         .site-header {
             height: 400px;
@@ -57,6 +75,11 @@ h1 {
 }
 p {
     margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 1120px) {

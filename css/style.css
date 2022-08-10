@@ -10,6 +10,22 @@ body {
   body .outer-wrap header, body .outer-wrap footer {
     background: black;
     height: 100px; }
+  body .outer-wrap .content-area {
+    padding: 2em; }
+    body .outer-wrap .content-area .post {
+      background: #fff;
+      margin-bottom: 1em; }
+      body .outer-wrap .content-area .post a {
+        color: #000;
+        text-decoration: none; }
+        body .outer-wrap .content-area .post a .post-content {
+          padding: 0 40px 20px; }
+          body .outer-wrap .content-area .post a .post-content h2 {
+            background: #f6d200;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            margin: 0 -40px 30px; }
   body .outer-wrap .site-header {
     height: 400px;
     display: flex;
@@ -45,6 +61,11 @@ h1 {
 
 p {
   margin: 0; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 @media screen and (min-width: 1120px) {
   .content-area {
