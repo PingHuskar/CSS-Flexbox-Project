@@ -76,5 +76,22 @@ img {
 @media screen and (min-width: 1120px) {
   .site-title {
     font-size: 4em !important; } }
+@media screen and (min-width: 810px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .post {
+    flex-basis: 49%; } }
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%; }
+
+  .post-half {
+    flex-basis: 49%; }
+
+  .post-full {
+    flex-basis: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
