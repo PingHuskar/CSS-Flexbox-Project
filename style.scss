@@ -8,9 +8,16 @@ body {
     background: #EDEDED;
     margin: 0;
     .outer-wrap {
-        header, footer {
+        header {
+            background: #000;
+        }
+        footer {
             background: black;
-            height: 100px;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            font-size: 1.2em;
+            font-weight: bold;
         }
         .content-area {
             padding: 2em;
@@ -207,6 +214,26 @@ body {
                 padding: 1em 1em;
                 color: #000;
                 background: #f6d200;
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 1.1em;
+                            font-weight: bold;
+                            padding: .6em 1em;
+                            display: block;
+                            transition: all .5s ease;
+                            &:hover {
+                                background-color: black;
+	                            color: #F6D200;
+                            }
+                        }
+                    }
+                }
             }
         }
         .sidebar-right {
@@ -317,5 +344,19 @@ img {
             flex-basis: 48.8%;
         }
     }
-    
+}
+
+@media screen and (min-width: 810px) {
+
+	.main-menu ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		text-align: center;
+        li {
+            flex-grow: 1;
+            flex-basis: auto;
+            flex-shrink: 0;
+        }
+	}
 }

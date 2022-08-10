@@ -7,9 +7,15 @@ body, button, input, textarea {
 body {
   background: #EDEDED;
   margin: 0; }
-  body .outer-wrap header, body .outer-wrap footer {
+  body .outer-wrap header {
+    background: #000; }
+  body .outer-wrap footer {
     background: black;
-    height: 100px; }
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold; }
   body .outer-wrap .content-area {
     padding: 2em; }
     body .outer-wrap .content-area .post {
@@ -151,6 +157,21 @@ body {
       padding: 1em 1em;
       color: #000;
       background: #f6d200; }
+      body .outer-wrap .site-header .main-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; }
+        body .outer-wrap .site-header .main-menu ul li a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.1em;
+          font-weight: bold;
+          padding: .6em 1em;
+          display: block;
+          transition: all .5s ease; }
+          body .outer-wrap .site-header .main-menu ul li a:hover {
+            background-color: black;
+            color: #F6D200; }
   body .outer-wrap .sidebar-right {
     background: #EDEDED;
     color: #000;
@@ -235,5 +256,15 @@ img {
     justify-content: space-between; }
     .sidebar-right .widget {
       flex-basis: 48.8%; } }
+@media screen and (min-width: 810px) {
+  .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center; }
+    .main-menu ul li {
+      flex-grow: 1;
+      flex-basis: auto;
+      flex-shrink: 0; } }
 
 /*# sourceMappingURL=style.css.map */
