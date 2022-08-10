@@ -32,6 +32,45 @@ body {
                     }
                 }
             }
+            .watch {
+                .section-header {
+                    color: #000;
+                    font-size: 3em;
+                    text-align: center;
+                }
+                .watch-card {
+                    margin-bottom: 1em;
+                    .watch-img {
+                        img {
+
+                        }
+                    }
+                    .watch-content {
+                        background: #000;
+                        color: #fff;
+                        padding: 3em;
+                        h2 {
+                            font-size: 2em;
+                            font-weight: 300;
+                            margin: 0;
+                            text-transform: capitalize;
+                        }
+                        .movie-info {
+                            font-weight: bold;
+                            span {
+                                padding-right: 1.5em;
+                            }
+                            .movie-story {
+                                margin: 1em 0;
+                            }
+                            a {
+                                color: #fff;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .site-header {
             height: 400px;
