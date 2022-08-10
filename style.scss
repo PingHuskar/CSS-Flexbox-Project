@@ -9,11 +9,42 @@ body {
     margin: 0;
     .outer-wrap {
         header, footer {
-            background: green;
+            background: black;
             height: 100px;
         }
         .content-area {
 
+        }
+        .site-header {
+            height: 400px;
+            display: flex;
+            flex-flow: column;
+            .site-info {
+                flex-grow: 1;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                .site-title {
+                    margin: 0;
+                    font-size: 2em;
+                    font-weight: 300;
+                    text-align: center;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .site-description {
+                    text-align: center;
+                    color: #f6d200;
+                    font: 1.2em;
+                    margin-top: -0.8;
+                    font-style: italic;
+                }
+            }
+            .main-menu {
+                padding: 1em 1em;
+                color: #000;
+                background: #f6d200;
+            }
         }
         .sidebar-right {
             background: blue;
@@ -34,5 +65,11 @@ p {
     }
     .sidebar-right {
         flex: 0 0 320 px;
+    }
+    
+}
+@media screen and (min-width: 1120px) {
+    .site-title {
+        font-size: 4em !important;
     }
 }
