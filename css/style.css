@@ -1,0 +1,30 @@
+body, button, input, textarea {
+  color: #000;
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+  line-height: 1.8; }
+
+body {
+  background: #EDEDED;
+  margin: 0; }
+  body .outer-wrap header, body .outer-wrap footer {
+    background: green;
+    height: 100px; }
+  body .outer-wrap .sidebar-right {
+    background: blue;
+    color: #fff; }
+
+h1 {
+  color: red; }
+
+p {
+  margin: 0; }
+
+@media screen and (min-width: 1120px) {
+  .content-area {
+    display: flex; }
+
+  .sidebar-right {
+    flex: 0 0 320 px; } }
+
+/*# sourceMappingURL=style.css.map */
